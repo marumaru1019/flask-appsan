@@ -1,1 +1,6 @@
 Flask==1
+azure-functions
+requests
+pandas
+azure-ai-textanalytics
+lxml
