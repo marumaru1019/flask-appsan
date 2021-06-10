@@ -1,0 +1,8 @@
+pass.yml
+*.sh
+node_modules
+.vscode
+
+*css.map
+**/scss/component/*.css
+__pycache__

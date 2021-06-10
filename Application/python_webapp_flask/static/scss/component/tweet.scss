@@ -1,0 +1,9 @@
+.tweet {
+  &__tags {
+    color: black;
+
+    &__item {
+      cursor: pointer;
+    }
+  }
+}

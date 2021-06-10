@@ -1,0 +1,8 @@
+// ブートストラップは最初に読み込まないと後半のscssがおかしいことになるので注意
+// @import "../../node_modules/bootstrap/scss/bootstrap";
+// layout
+@import "./base/status";
+
+@import "./component/site";
+@import "./component/tweet";
+
