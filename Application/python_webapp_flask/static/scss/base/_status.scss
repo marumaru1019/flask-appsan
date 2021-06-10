@@ -1,13 +1,5 @@
-$base-color: rgba(29, 161, 242, 1);
-$accent-color: rgb(235, 238, 240);
-
 // example-box
-$color-blue-dark: rgb(112, 154, 196);
-$color-blue-light: rgb(226, 235, 243);
-$color-red-dark: rgb(235, 104, 119);
-$color-red-light: rgb(251, 225, 228);
-$color-green-dark: rgb(1, 183, 143);
-$color-green-light: rgb(204, 241, 233);
+$twitter-color: #00acee;
 
 // breakpoint (bootstrap)
 $xs: 0;
@@ -35,7 +27,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
 }
 
 // delete out line of hanbarger menu

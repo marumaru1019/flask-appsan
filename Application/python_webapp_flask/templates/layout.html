@@ -25,9 +25,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('home') }}">ホーム</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a class="navbar-item" href="{{ url_for('home') }}">ホーム</a></li>
+                    <li><a class="navbar-item" href="{{ url_for('about') }}">#Meとは</a></li>
                 </ul>
             </div>
         </div>
@@ -35,9 +34,9 @@
 
     <div class="container body-content">
         {% block content %}{% endblock %}
-        <hr />
+
         <footer>
-            <p>&copy; {{ year }} - Python Flask Application</p>
+            <p class="text-center">&copy; {{ year }} -  #Me presented by marumaru201</p>
         </footer>
     </div>
 

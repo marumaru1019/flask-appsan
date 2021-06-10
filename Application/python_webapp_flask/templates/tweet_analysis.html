@@ -4,9 +4,10 @@
 
 <section class="main">
   <div class="tweet">
+    <h2 class="text-center">ハッシュタグをつけてツイートする</h2>
     <div class="tweet_form">
-      <label class="mt-5" for="tweet">Tweet：</label>
-      <textarea type="text" class="input form-control js-form" id="js-tweet" name="tweet" placeholder="#駆け出しエンジニア">{{ tweet }}
+      <label class="mt-5" for="tweet"></label>
+      <textarea type="text" class="tweet__form js-form" id="js-tweet" name="tweet" placeholder="#駆け出しエンジニア">{{ tweet }}
       </textarea>
       <div class="mt-5 form__submit" id="js-submit-form">
         <!-- <input class="submit-btn btn" type="submit" value="Get"> -->
@@ -17,9 +18,12 @@
         </li>
         {% endfor %}
       </ul>
-      <button id="js-tweet-btn">
-        ツイートする
-      </button>
+      <div class="mt-5 form__submit text-center tweet__button" id="js-tweet-btn">
+        <button type="submit" class="submit-btn js-submit-get tweet__button__get">
+          <i class="fab fa-twitter target-twitter"></i>
+          <span class="submit-button-text"></span>ツイートする
+        </button>
+      </div>
     </div>
   </div>
 </section>
