@@ -3,8 +3,10 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import render_template
+from flask import Flask, render_template, request
 from python_webapp_flask import app
+from python_webapp_flask import azure_nlp
+import os
 
 @app.route('/')
 @app.route('/home')
@@ -16,6 +18,18 @@ def home():
         year=datetime.now().year,
     )
 
+
+@app.route('/tweet_analysis', methods=['POST'])
+def tweet_analysis():
+    az = azure_nlp.AzureNlp()
+    tweet = request.form['tweet']
+    keys = az.find_key([tweet])
+    return render_template('tweet_analysis.html',
+                            tweet=tweet,
+                            tags = keys,
+                            year=datetime.now().year,
+                            title="Complete")
+
 @app.route('/contact')
 def contact():
     """Renders the contact page."""
@@ -23,7 +37,6 @@ def contact():
         'contact.html',
         title='Contact',
         year=datetime.now().year,
-        message='Your contact page.'
     )
 
 @app.route('/about')
@@ -33,5 +46,4 @@ def about():
         'about.html',
         title='About',
         year=datetime.now().year,
-        message='Your application description page.'
     )
