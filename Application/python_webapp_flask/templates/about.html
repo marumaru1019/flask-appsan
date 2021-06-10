@@ -3,19 +3,15 @@
 {% block content %}
 
 <section class="main">
-  <div class="tweet">
-    <div class="tweet_form">
-      <form action="/tweet_analysis" method="POST" enctype="multipart/form-data">
-        <label class="mt-5" for="tweet">Tweet：</label>
-        <textarea type="text" class="input form-control" id="tweet" name="tweet" placeholder="#駆け出しエンジニア"></textarea>
-        <div class="mt-5 form__submit" id="js-submit-form">
-          <button type="submit" class="submit-btn js-submit-get">
-            <i class="fab fa-twitter target-twitter"></i>
-            <span class="submit-button-text"></span>Get
-          </button>
-          <!-- <input class="submit-btn btn" type="submit" value="Get"> -->
-        </div>
-      </form>
+  <div class="about">
+    <h2 class="about__title text-center">
+      #Meとは
+    </h2>
+    <div class="about__box">
+      <p class="about_text">
+        #Meはあなたのツイートからキーワードを抽出し、ハッシュタグを自動生成してくれるアプリケーションです。<br><br>
+        このアプリケーションを使うことによりあなたは効率的にツイートをすることができるようになります。
+      </p>
     </div>
   </div>
 </section>

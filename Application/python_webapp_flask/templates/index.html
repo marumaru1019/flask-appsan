@@ -4,17 +4,17 @@
 
 <section class="main">
     <div class="tweet">
+        <h2 class="text-center">ツイートを解析する</h2>
         <div class="tweet_form">
             <form action="/tweet_analysis" method="POST" enctype="multipart/form-data">
-                <label class="mt-5" for="tweet">Tweet：</label>
-                <textarea type="text" class="input form-control" id="tweet" name="tweet"
-                    placeholder="#駆け出しエンジニア"></textarea>
-                <div class="mt-5 form__submit" id="js-submit-form">
-                    <button type="submit" class="submit-btn js-submit-get">
+                <label class="mt-5" for="tweet"></label>
+                <textarea type="text" class="tweet__form" id="tweet" name="tweet"
+                    placeholder="ハッシュタグを自動生成したいツイートを記入してください"></textarea>
+                <div class="mt-5 form__submit text-center tweet__button" id="js-submit-form">
+                    <button type="submit" class="submit-btn js-submit-get tweet__button__get">
                         <i class="fab fa-twitter target-twitter"></i>
                         <span class="submit-button-text"></span>Get
                     </button>
-                    <!-- <input class="submit-btn btn" type="submit" value="Get"> -->
                 </div>
             </form>
         </div>

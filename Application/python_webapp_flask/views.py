@@ -30,15 +30,6 @@ def tweet_analysis():
                             year=datetime.now().year,
                             title="Complete")
 
-@app.route('/contact')
-def contact():
-    """Renders the contact page."""
-    return render_template(
-        'contact.html',
-        title='Contact',
-        year=datetime.now().year,
-    )
-
 @app.route('/about')
 def about():
     """Renders the about page."""
