@@ -4,6 +4,38 @@
 
     &__item {
       cursor: pointer;
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px;
+      background: white;
+      border-radius: 10px;
+      color: $twitter-color;
+      border: solid 2px $twitter-color;
+    }
+  }
+
+  &__form {
+    resize: auto;
+    height: 200px;
+    width: 100%;
+  }
+
+  &__button {
+    padding: 25px;
+
+    &__get {
+      padding: 10px 30px;
+      border-radius: 10px;
+      background: $twitter-color;
+      color: white;
+      border: solid 1px $twitter-color;
+      transition: all 200ms 0s ease;
+
+      &:hover {
+        background: white;
+        color: $twitter-color;
+
+      }
     }
   }
 }
