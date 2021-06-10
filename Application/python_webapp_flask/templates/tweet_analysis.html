@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="main">
+  <div class="tweet">
+    <div class="tweet_form">
+      <label class="mt-5" for="tweet">Tweet：</label>
+      <textarea type="text" class="input form-control js-form" id="js-tweet" name="tweet" placeholder="#駆け出しエンジニア">{{ tweet }}
+      </textarea>
+      <div class="mt-5 form__submit" id="js-submit-form">
+        <!-- <input class="submit-btn btn" type="submit" value="Get"> -->
+      </div>
+      <ul class="tweet__tags">
+        {% for key in tags %}
+        <li class="tweet__tags__item js-tag">#{{ key }}
+        </li>
+        {% endfor %}
+      </ul>
+      <button id="js-tweet-btn">
+        ツイートする
+      </button>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
